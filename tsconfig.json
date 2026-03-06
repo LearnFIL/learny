@@ -3,9 +3,11 @@
     "target": "ES2022",
     "module": "commonjs",
     "outDir": "./dist",
-    "rootDir": "./src",
+    "rootDir": ".",
     "strict": true,
     "esModuleInterop": true,
     "skipLibCheck": true
-  }
+  },
+  "include": ["index.ts", "agent/**/*.ts", "api/**/*.ts", "services/**/*.ts"],
+  "exclude": ["node_modules", "dist", "web"]
 }
